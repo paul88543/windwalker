@@ -575,6 +575,8 @@ HTML;
 
 		$this->instance->addClass(['stub-flower', 'bar']);
 
+		$this->instance->class('hello');
+
 		self::assertEquals('stub-flower foo bar', $this->instance->get('class'));
 
 		$this->instance->addClass(['yoo goo']);
