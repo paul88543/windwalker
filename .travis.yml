@@ -29,7 +29,7 @@ before_install:
   - sh -e build/travis/scripts/libsodium.sh
 
 before_script:
-  - sh build/travis/scripts/pecl-libsodium.sh
+  - sh -e build/travis/scripts/pecl-libsodium.sh || true
   - composer update
   - phpenv rehash
 
